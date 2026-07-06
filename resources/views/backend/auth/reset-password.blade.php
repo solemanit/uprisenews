@@ -88,7 +88,7 @@
 
         {{-- Submit --}}
         <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-primary" id="submitBtn">
+            <button type="submit" class="btn btn-dark" id="submitBtn">
                 <span id="btnText">
                     <i class="bi bi-shield-check me-1"></i> Reset Password
                 </span>

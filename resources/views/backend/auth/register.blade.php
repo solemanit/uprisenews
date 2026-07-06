@@ -86,7 +86,7 @@
     <div class="row">
         <div class="col-12">
             <div class="d-grid">
-                <button type="submit" class="btn btn-primary" id="submitBtn">
+                <button type="submit" class="btn btn-dark" id="submitBtn">
                     <span id="btnText">Register</span>
                     <span id="btnLoading" class="d-none">
                         <span class="spinner-border spinner-border-sm"></span>

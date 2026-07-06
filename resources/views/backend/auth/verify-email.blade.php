@@ -21,7 +21,7 @@
     <form method="POST" action="{{ route('verification.send') }}" id="resendForm">
         @csrf
         <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-primary" id="resendBtn">
+            <button type="submit" class="btn btn-dark" id="resendBtn">
                 <span id="resendText">
                     <i class="bi bi-arrow-repeat me-1"></i> Resend Verification Email
                 </span>

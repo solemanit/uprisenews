@@ -37,7 +37,7 @@
         </div>
 
         <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-primary" id="submitBtn">
+            <button type="submit" class="btn btn-dark" id="submitBtn">
                 <span id="btnText">
                     <i class="bi bi-shield-lock me-1"></i> Confirm & Continue
                 </span>

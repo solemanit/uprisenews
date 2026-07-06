@@ -31,8 +31,8 @@
                                      data-uc-swiper-s="items: auto; direction: vertical; autoHeight: true; mousewheel: true; freeMode: false; watchSlidesVisibility: true; watchSlidesProgress: true; watchOverflow: true">
                                     <div class="swiper-wrapper md:flex-1" id="live-now-thumbs"></div>
                                 </div>
-                                <div class="swiper-prev btn btn-2xs lg:btn-xs btn-primary w-100 d-none md:d-flex order-1">Prev</div>
-                                <div class="swiper-next btn btn-2xs lg:btn-xs btn-primary w-100 d-none md:d-flex order-3">Next</div>
+                                <div class="swiper-prev btn btn-2xs lg:btn-xs btn-dark w-100 d-none md:d-flex order-1">Prev</div>
+                                <div class="swiper-next btn btn-2xs lg:btn-xs btn-dark w-100 d-none md:d-flex order-3">Next</div>
                             </div>
                         </div>
 

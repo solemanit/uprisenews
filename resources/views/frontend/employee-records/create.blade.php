@@ -198,7 +198,7 @@
                     <a href="{{ route('employee-records.index') }}" class="btn btn-secondary">
                         <i class="bi bi-x-lg me-1"></i> Cancel
                     </a>
-                    <button type="submit" class="btn btn-primary px-4">
+                    <button type="submit" class="btn btn-dark px-4">
                         <i class="bi bi-save me-1"></i> Save Record
                     </button>
                 </div>

@@ -33,7 +33,7 @@
             </form>
         </div>
         <div class="col-md-6 text-end">
-            <a href="{{ route('employee-records.create') }}" class="btn btn-primary">
+            <a href="{{ route('employee-records.create') }}" class="btn btn-dark">
                 <i class="bi bi-plus-lg me-1"></i> Add New Record
             </a>
         </div>

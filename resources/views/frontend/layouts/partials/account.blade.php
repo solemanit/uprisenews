@@ -25,7 +25,7 @@
                                     </div>
                                     <a href="#" class="uc-link fs-6" data-uc-switcher-item="2">Forgot password</a>
                                 </div>
-                                <button class="btn btn-primary btn-sm lg:mt-1" type="submit">Log in</button>
+                                <button class="btn btn-dark btn-sm lg:mt-1" type="submit">Log in</button>
                             </form>
                             <div class="panel h-24px">
                                 <hr class="position-absolute top-50 start-50 translate-middle hr m-0 w-100">
@@ -61,7 +61,7 @@
                                         <label for="input_checkbox_accept_terms" class="hstack justify-between form-check-label fs-7 sm:fs-6">I read and accept the <a href="#" class="uc-link ms-narrow" data-uc-switcher-item="3">terms of use</a>. </label>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-sm lg:mt-1" type="submit">Sign up</button>
+                                <button class="btn btn-dark btn-sm lg:mt-1" type="submit">Sign up</button>
                             </form>
                             <div class="panel h-24px">
                                 <hr class="position-absolute top-50 start-50 translate-middle hr m-0 w-100">
@@ -92,7 +92,7 @@
                                     <input class="form-check-input rounded-0 dark:bg-gray-800 dark:border-white dark:border-opacity-15" type="checkbox" id="inputCheckVerify" required>
                                     <label class="form-check-label fs-7 sm:fs-6" for="inputCheckVerify"> <span>I'm not a robot</span>. </label>
                                 </div>
-                                <button class="btn btn-primary btn-sm lg:mt-1" type="submit">Reset a password</button>
+                                <button class="btn btn-dark btn-sm lg:mt-1" type="submit">Reset a password</button>
                             </form>
                         </div>
                         <p class="fs-7 sm:fs-6 mt-2 sm:m-0">Remember your password? <a class="uc-link" href="#" data-uc-switcher-item="0">Log in</a></p>

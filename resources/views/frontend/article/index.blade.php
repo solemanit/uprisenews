@@ -326,7 +326,7 @@
                                 <textarea
                                     class="form-control h-250px w-full fs-6 bg-white dark:bg-opacity-0 dark:text-white dark:border-gray-300 dark:border-opacity-30"
                                     type="text" placeholder="Your comment" required></textarea>
-                                <button class="btn btn-primary btn-sm mt-1" type="submit">Send</button>
+                                <button class="btn btn-dark btn-sm mt-1" type="submit">Send</button>
                             </form>
                         </div>
                     </div>

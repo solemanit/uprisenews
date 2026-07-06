@@ -35,7 +35,7 @@ src: resources/views/backend/layouts/auth.blade.php
 
         {{-- Logo --}}
         <div class="login-logo">
-            <a href="{{ route('dashboard') }}">
+            <a href="{{ route('backend.dashboard') }}">
                 <b>{{ config('app.name_bold', 'Admin') }}</b>{{ config('app.name_suffix', 'Panel') }}
             </a>
         </div>

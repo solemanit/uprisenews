@@ -48,7 +48,7 @@
 
         {{-- Submit --}}
         <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-primary" id="submitBtn">
+            <button type="submit" class="btn btn-dark" id="submitBtn">
                 <span id="btnText">
                     <i class="bi bi-send me-1"></i> Send Reset Link
                 </span>

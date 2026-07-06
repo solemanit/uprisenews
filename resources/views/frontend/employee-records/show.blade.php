@@ -74,7 +74,7 @@
                         <i class="bi bi-pencil me-1"></i> Edit
                     </a>
                     <a href="{{ route('employee-records.print', $employeeRecord) }}" target="_blank"
-                        class="btn btn-primary btn-sm">
+                        class="btn btn-dark btn-sm">
                         <i class="bi bi-printer me-1"></i> Print Document
                     </a>
                 </div>

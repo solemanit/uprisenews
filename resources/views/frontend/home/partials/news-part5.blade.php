@@ -57,7 +57,7 @@
                                 <div class="widgt-content">
                                     <form class="vstack gap-1">
                                         <input class="form-control form-control-sm fs-6 fw-medium h-40px w-full bg-white dark:bg-gray-800 dark:border-white dark:border-opacity-15" type="email" placeholder="Your email" required>
-                                        <button class="btn btn-sm btn-primary" type="submit">Sign up</button>
+                                        <button class="btn btn-sm btn-dark" type="submit">Sign up</button>
                                     </form>
                                     <ul class="nav-x justify-center gap-1 mt-3">
                                         <li><a href="{{ route("article") }}fb" class="cstack w-32px h-32px border rounded-circle hover:text-black dark:hover:text-white hover:scale-110 transition-all duration-150"><i class="icon icon-1 unicon-logo-facebook"></i></a></li>

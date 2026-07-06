@@ -33,7 +33,8 @@ src: resources/views/backend/layouts/app.blade.php
 
     {{-- AdminLTE CSS (from public/assets/css/) --}}
     <link rel="stylesheet" href="{{ asset('assets/backend/css/adminlte.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('assets/backend/css/main.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-bs5.min.css" rel="stylesheet">
     {{-- Page-specific styles --}}
     @stack('styles')
 </head>
@@ -51,24 +52,8 @@ src: resources/views/backend/layouts/app.blade.php
         {{-- Main Content --}}
         <main class="app-main" id="main" tabindex="-1">
 
-            {{-- Page Content Header / Breadcrumb --}}
-            <div class="app-content-header">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h3 class="mb-0">@yield('page_title', 'Dashboard')</h3>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-end">
-                                <li class="breadcrumb-item">
-                                    <a href="{{ route('dashboard') }}">Home</a>
-                                </li>
-                                @yield('breadcrumb')
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{-- Page Content Header --}}
+            <div class="app-content-header"></div>
 
             {{-- Page Content --}}
             <div class="app-content">
@@ -113,7 +98,7 @@ src: resources/views/backend/layouts/app.blade.php
 
     {{-- AdminLTE JS (from public/assets/js/) --}}
     <script src="{{ asset('assets/backend/js/adminlte.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-bs5.min.js"></script>
     {{-- Page-specific scripts --}}
     @stack('scripts')
 </body>
