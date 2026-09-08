@@ -1,3 +1,4 @@
+{{-- src: resources/views/frontend/layouts/partials/search.blade.php --}}
 <div id="uc-search-modal" class="uc-modal-full uc-modal" data-uc-modal="overlay: true">
     <div class="uc-modal-dialog d-flex justify-center bg-white text-dark dark:bg-gray-900 dark:text-white"
         data-uc-height-viewport="">
@@ -9,7 +10,7 @@
         <div class="panel w-100 sm:w-500px px-2 py-10">
             <h3 class="h1 text-center">Search</h3>
             <form class="hstack gap-1 mt-4 border-bottom p-narrow dark:border-gray-700"
-                action="https://html.themewant.com/news5/main/index.html?">
+                action="">
                 <span class="d-inline-flex justify-center items-center w-24px sm:w-40 h-24px sm:h-40px opacity-50"><i
                         class="unicon-search icon-3"></i></span>
                 <input type="search" name="q"

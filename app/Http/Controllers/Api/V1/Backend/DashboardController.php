@@ -1,7 +1,7 @@
 <?php
-// app/Http/Controllers/Api/V1/DashboardController.php
+// app/Http/Controllers/Api/V1/Backend/DashboardController.php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\V1\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Ad;

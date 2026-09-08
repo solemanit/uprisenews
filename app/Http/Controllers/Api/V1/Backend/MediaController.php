@@ -1,7 +1,7 @@
 <?php
-// app/Http/Controllers/Api/V1/MediaController.php
+// app/Http/Controllers/Api/V1/Backend/MediaController.php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\V1\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Media\StoreMediaRequest;

@@ -10,16 +10,16 @@ class ArticleResource extends JsonResource
 {
     public function toArray(Request $request): array
     {
+        $isDetailView = $request->routeIs('api.v1.articles.show')
+            || $request->routeIs('api.v1.public-articles.show');
+
         return [
             // ── Core ────────────────────────────────────────────────────────
             'id'             => $this->id,
             'title'          => $this->title,
             'slug'           => $this->slug,
             'excerpt'        => $this->excerpt,
-            'body'           => $this->when(
-                                    $request->routeIs('api.v1.articles.show'),
-                                    $this->body
-                                ),
+            'body'           => $this->when($isDetailView, $this->body),
             'featured_image' => $this->featured_image
                                     ? asset('storage/' . $this->featured_image)
                                     : null,
@@ -43,19 +43,19 @@ class ArticleResource extends JsonResource
             ]),
 
             // ── SEO ──────────────────────────────────────────────────────────
-            // Only exposed on detail endpoint (show) to keep listing payloads lean
+            // Only exposed on detail endpoints to keep listing payloads lean
             'seo' => $this->when(
-                $request->routeIs('api.v1.articles.show'),
+                $isDetailView,
                 fn () => [
-                    'title'        => $this->seo_title_resolved,   // falls back to article title
-                    'description'  => $this->seo_description_resolved, // falls back to excerpt
+                    'title'        => $this->seo_title_resolved,
+                    'description'  => $this->seo_description_resolved,
                     'keywords'     => $this->seo_keywords,
                     'canonical_url'=> $this->canonical_url
                                         ?? url("/article/{$this->slug}"),
                     'og'           => [
                         'title'       => $this->seo_title_resolved,
                         'description' => $this->seo_description_resolved,
-                        'image'       => $this->og_image_url,       // og_image → featured_image fallback
+                        'image'       => $this->og_image_url,
                         'type'        => 'article',
                         'url'         => $this->canonical_url
                                             ?? url("/article/{$this->slug}"),

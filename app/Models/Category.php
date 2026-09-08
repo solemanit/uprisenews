@@ -78,6 +78,19 @@ class Category extends Model
         return $this->hasMany(Category::class, 'parent_id');
     }
 
+    public function articles(): HasMany
+    {
+        return $this->hasMany(Article::class);
+    }
+
+    // ─── Accessors ──────────────────────────────────────────────────────────────
+
+    /** Public-facing frontend URL for this category. Used by MenuItem::resolved_url. */
+    public function getUrlAttribute(): string
+    {
+        return route('category.show', $this->slug);
+    }
+
     // ─── Scopes ─────────────────────────────────────────────────────────────────
 
     public function scopeActive($query)
@@ -88,10 +101,5 @@ class Category extends Model
     public function scopeParent($query)
     {
         return $query->whereNull('parent_id');
-    }
-
-    public function articles(): HasMany
-    {
-        return $this->hasMany(Article::class);
     }
 }

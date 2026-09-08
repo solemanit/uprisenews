@@ -1,4 +1,4 @@
-{{-- app --}}
+{{-- src: resources/views/frontend/layouts/app.blade.php --}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
 
@@ -7,9 +7,6 @@
     <body class="uni-body panel bg-white text-gray-900 dark:bg-black dark:text-white text-opacity-50 overflow-x-hidden">
         <!--  Search modal -->
         @include('frontend.layouts.partials.search')
-
-        <!--  Menu panel -->
-        @include('frontend.layouts.partials.menupanel')
 
         <!--  Account modal -->
         @include('frontend.layouts.partials.account')

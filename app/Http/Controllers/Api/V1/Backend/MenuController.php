@@ -1,7 +1,7 @@
 <?php
-// app/Http/Controllers/Api/V1/MenuController.php
+// app/Http/Controllers/Api/V1/Backend/MenuController.php
 
-namespace App\Http\Controllers\Api\V1;
+namespace App\Http\Controllers\Api\V1\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\MenuResource;

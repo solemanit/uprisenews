@@ -1,3 +1,4 @@
+{{-- src: resources/views/frontend/layouts/partials/footer.blade.php --}}
 <!-- Footer start -->
 <footer id="uc-footer" class="uc-footer panel uc-dark">
     <div class="footer-outer py-4 lg:py-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-opacity-50">
@@ -5,12 +6,8 @@
             <div class="footer-inner vstack gap-6 xl:gap-8">
                 <div class="uc-footer-bottom panel vstack gap-4 justify-center lg:fs-5">
                     <nav class="footer-nav">
-                        <ul class="nav-x gap-2 lg:gap-4 justify-center text-center text-uppercase fw-medium">
-                            <li><a class="hover:text-gray-900 dark:hover:text-white duration-150" href="blog-category.html">Politics</a></li>
-                            <li><a class="hover:text-gray-900 dark:hover:text-white duration-150" href="blog-category.html">Opinions</a></li>
-                            <li><a class="hover:text-gray-900 dark:hover:text-white duration-150" href="blog-category.html">World</a></li>
-                            <li><a class="hover:text-gray-900 dark:hover:text-white duration-150" href="blog-category.html">Media</a></li>
-                        </ul>
+                        <div data-menu-location="footer"
+                            data-menu-class="nav-x gap-2 lg:gap-4 justify-center text-center text-uppercase fw-medium"></div>
                     </nav>
                     <div class="footer-social hstack justify-center gap-2 lg:gap-3">
                         <ul class="nav-x gap-2">
@@ -76,6 +73,14 @@
 {{-- UI Kit & App --}}
 <script defer src="{{ asset('assets/frontend/js/uikit-components-bs.js') }}"></script>
 <script defer src="{{ asset('assets/frontend/js/app.js') }}"></script>
+
+{{-- API Client --}}
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+<script defer src="{{ asset('assets/frontend/js/api-client.js') }}"></script>
+<script defer src="{{ asset('assets/frontend/js/menu-loader.js') }}"></script>
+<script defer src="{{ asset('assets/frontend/js/home-loader.js') }}"></script>
+<script defer src="{{ asset('assets/frontend/js/article-details-loader.js') }}"></script>
+<script defer src="{{ asset('assets/frontend/js/category-articles-loader.js') }}"></script>
 
 {{-- Page-level extra scripts --}}
 @stack('scripts')
